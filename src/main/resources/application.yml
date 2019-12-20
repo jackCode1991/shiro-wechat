@@ -1,0 +1,33 @@
+
+
+## 请自行修改下面信息
+
+spring:
+  application:
+    name: shiro-jwt-applet
+  jpa:
+    hibernate:
+      ddl-auto: create      # 请自行修改 请自行修改 请自行修改
+    open-in-view: false     # 关闭 OSIV
+
+
+#  datasource本地配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/yiran?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#  redis本地配置 请自行配置
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+
+#  微信小程序配置 appid /appsecret
+#微信相关参数
+weChat:
+  #小程序appid
+  appid: wxb0b585c978fb4a45
+  #小程序密钥
+  secret: e424ce0b331275e95cbe611585444a47
